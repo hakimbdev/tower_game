@@ -1,6 +1,10 @@
 const express = require('express')
 const path = require('path')
 const opn = require('opn')
+Telegram.WebApp.close();
+Telegram.WebApp.showAlert('Restarting game...');
+Telegram.WebApp.sendData("restart_game");
+
 
 const server = express()
 const host = 'http://localhost:8082'
